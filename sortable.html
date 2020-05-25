@@ -1,0 +1,27 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Sortable</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+    <body>
+        <ul id="sortable">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemneto 5</li>
+        </ul>
+        <script>
+            $("#sortable").sortable({
+                axis: "y",
+                cancel:".cancel,.cancel2"
+            });
+        </script>
+    </body>
+</html>
+
